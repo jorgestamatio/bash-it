@@ -8,7 +8,7 @@ SCM_THEME_PROMPT_CLEAN=" ${bold_green}${normal}"
 SCM_GIT_CHAR="${bold_green}+${normal}"
 
 function prompt_command() {
-    PS1="${red}\u${reset_color}@${cyan}\h:${wellow}${white}\w${reset_color} [$(scm_prompt_info)]${reset_color}";
+    PS1="${red}\u${reset_color}@${cyan}\H${yellow}:\w ${reset_color}[$(scm_prompt_info)] ${reset_color}";
 }
 
 PROMPT_COMMAND=prompt_command;
